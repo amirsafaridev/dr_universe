@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وب سایت با استریم RTMP</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ffmpeg/0.12.10/umd/ffmpeg.min.js" integrity="sha512-j2FJMGBh+AdPWKCKDqIzH67vu4ps8OsNZqqetz8YSlbwy2ZwFTL+p6Hp1j17nL0B7IDl9E4zhPUXZKwz7MzjQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<h1>استریم دوربین</h1>
+<video id="video" width="640" height="480" autoplay></video>
+<div id="error" style="color: red;"></div>
+<script>
+    (async () => {
+        try {
+            const { createFFmpeg, fetchFile } = FFmpeg;
+            const ffmpeg = createFFmpeg({ log: true });
+
+            // دریافت دسترسی به دوربین
+            const videoElement = document.getElementById('video');
+            const errorElement = document.getElementById('error');
+            const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+
+            // نمایش ویدئو در تگ ویدئو
+            videoElement.srcObject = stream;
+
+            // شروع ffmpeg
+            await ffmpeg.load();
+            ffmpeg.FS('writeFile', 'input.mp4', await fetchFile(stream));
+
+            // تنظیمات RTMP
+            const RTMP_SERVER_URL = 'rtmp://push.ir-thr-mn-cluster.arvanlive.ir:1935/NRwVr5Gzlk';
+            await ffmpeg.run('-i', 'input.mp4', '-c:v', 'libx264', '-f', 'flv', RTMP_SERVER_URL);
+
+        } catch (error) {
+            // نمایش خطا در تگ error
+            const errorElement = document.getElementById('error');
+            errorElement.textContent = `خطایی رخ داده است: ${error.message}`;
+        }
+    })();
+</script>
+</body>
+</html>

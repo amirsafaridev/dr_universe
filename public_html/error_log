@@ -1,0 +1,12 @@
+[29-Sep-2023 09:45:13 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.29. in /home/ipir/public_html/vendor/composer/platform_check.php on line 24
+[29-Sep-2023 09:48:58 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[29-Sep-2023 09:48:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[29-Sep-2023 09:49:01 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[29-Sep-2023 09:49:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[02-Oct-2023 06:38:39 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.33. in /home/ipir/laravel/vendor/composer/platform_check.php on line 24
