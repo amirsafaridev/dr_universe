@@ -1,0 +1,132 @@
+[29-Sep-2023 09:45:13 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 8.0.29. in /home/ipir/public_html/vendor/composer/platform_check.php on line 24
+[29-Sep-2023 09:48:58 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[29-Sep-2023 09:48:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[29-Sep-2023 09:49:01 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[29-Sep-2023 09:49:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/alt/php82/usr/share/pear:/opt/alt/php82/usr/share/php:/usr/share/pear:/usr/share/php') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[02-Oct-2023 06:38:39 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.33. in /home/ipir/laravel/vendor/composer/platform_check.php on line 24
+[13-Aug-2024 09:23:36 UTC] PHP Warning:  require(/home/ipir/public_html/laravel-universe/public/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/laravel-universe/public/index.php on line 34
+[13-Aug-2024 09:23:36 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/laravel-universe/public/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/laravel-universe/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/laravel-universe/public/index.php on line 34
+[13-Aug-2024 09:23:39 UTC] PHP Warning:  require(/home/ipir/public_html/laravel-universe/public/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/laravel-universe/public/index.php on line 34
+[13-Aug-2024 09:23:39 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/laravel-universe/public/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/laravel-universe/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/laravel-universe/public/index.php on line 34
+[13-Aug-2024 09:23:42 UTC] PHP Warning:  require(/home/ipir/public_html/laravel-universe/public/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/laravel-universe/public/index.php on line 34
+[13-Aug-2024 09:23:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/laravel-universe/public/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/laravel-universe/public/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/laravel-universe/public/index.php on line 34
+[13-Aug-2024 09:27:03 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:27:03 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:27:07 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:27:07 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:27:10 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:27:10 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:28:06 UTC] PHP Warning:  require(/home/ipir/public_html/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:28:06 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:22 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:22 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:31 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:31 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:40 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:40 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:42 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:29:42 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:31:59 UTC] PHP Warning:  require(/home/ipir/public_html/../../laravel-universe/vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:31:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../laravel-universe/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:32:01 UTC] PHP Warning:  require(/home/ipir/public_html/../../laravel-universe/vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:32:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../laravel-universe/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:32:13 UTC] PHP Warning:  require(/home/ipir/public_html/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:32:13 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:32:17 UTC] PHP Warning:  require(/home/ipir/public_html/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:32:17 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:37:49 UTC] PHP Warning:  require(/home/ipir/public_html/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:37:49 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:37:52 UTC] PHP Warning:  require(/home/ipir/public_html/../../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:37:52 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:38:24 UTC] PHP Warning:  require(/home/ipir/public_html/vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:38:24 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:38:27 UTC] PHP Warning:  require(/home/ipir/public_html/vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[13-Aug-2024 09:38:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:40:41 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:40:41 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:42:55 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:42:55 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:45:59 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:45:59 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:52:27 UTC] PHP Warning:  require(/home/ipir/public_html/../vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[11-Sep-2024 12:52:27 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34
+[10-Oct-2024 10:03:02 UTC] PHP Warning:  require(/home/ipir/public_html/../laravel/vendor/autoload.php): Failed to open stream: No such file or directory in /home/ipir/public_html/index.php on line 34
+[10-Oct-2024 10:03:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/ipir/public_html/../laravel/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/ipir/public_html/index.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/ipir/public_html/index.php on line 34

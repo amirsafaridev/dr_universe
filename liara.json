@@ -1,0 +1,6 @@
+{
+	"laravel":
+	{
+		"phpversion": "^8.1"
+	}
+}
