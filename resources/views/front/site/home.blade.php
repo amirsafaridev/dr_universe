@@ -241,7 +241,7 @@
                     <i class="fa fa-send"></i> <!-- Envelope Icon for Direct Messages -->
                 </a>
             </div>
-            <h1>DrUniverse</h1>
+            <h1>Dr  Universe</h1>
         </div>
 
         @include('front.site.stories_list')
