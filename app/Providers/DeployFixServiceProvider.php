@@ -13,7 +13,8 @@ class DeployFixServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Run deployment fix commands BEFORE anything else in Laravel
+        $this->runDeployFix();
     }
 
     /**
@@ -21,7 +22,7 @@ class DeployFixServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->runDeployFix();
+        //
     }
 
     /**
@@ -59,10 +60,11 @@ class DeployFixServiceProvider extends ServiceProvider
         ];
 
         $allCommandsSuccessful = true;
+        $commandNumber = 1;
 
         // Execute each command
         foreach ($commands as $command) {
-            $this->logToFile($logFile, "Executing: {$command}");
+            $this->logToFile($logFile, "Command {$commandNumber}/" . count($commands) . ": {$command}");
             
             $output = [];
             $returnCode = 0;
@@ -83,6 +85,7 @@ class DeployFixServiceProvider extends ServiceProvider
             }
             
             $this->logToFile($logFile, "---");
+            $commandNumber++;
         }
 
         // Create .deploy_done file if all commands were successful

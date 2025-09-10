@@ -32,6 +32,7 @@ use App\Http\Controllers\Admin\AdminSettingsController;
 
 use App\Http\Controllers\LiveStreamController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DeployStatusController;
 use Illuminate\Support\Facades\Artisan;
 // بدون middleware احراز هویت برای تست
 
@@ -260,6 +261,11 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
     //Verifying Login & Register codes
     Route::post('/verifying', 'AuthController@verify_login_code')->name('verify_login_code');
     Route::post('/reg_verifying', 'AuthController@verify_reg_code')->name('verify_reg_code');
+
+    // Deploy Status Routes
+    Route::get('/deploy-status', [DeployStatusController::class, 'index'])->name('deploy.status');
+    Route::get('/deploy-status/api', [DeployStatusController::class, 'status'])->name('deploy.status.api');
+    Route::post('/deploy-status/force-run', [DeployStatusController::class, 'forceRun'])->name('deploy.force.run');
 
 });
 
