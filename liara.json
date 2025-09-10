@@ -1,10 +1,27 @@
 {
-    "laravel": {
-        "phpVersion": "8.1",
-        "timezone": "Asia/Tehran",
-        "installDevDependencies": true,
-        "configCache": true,
-        "routeCache": true,
-        "buildAssets": false
-    }
-}
+    "app": "druniverse",
+    "port": 3000,
+    "build": {
+      "location": "iran"
+    },
+    "disks": [
+      {
+        "name": "storage",
+        "mountTo": "storage"
+      }
+    ],
+    "postDeploy": [
+      "chmod -R 775 storage bootstrap/cache",
+      "mkdir -p storage/framework/cache/data",
+      "mkdir -p storage/framework/sessions",
+      "mkdir -p storage/framework/views",
+      "chmod -R 775 storage",
+      "chown -R www-data:www-data storage",
+      "chmod -R 777 /tmp",
+      "php artisan cache:clear",
+      "php artisan config:clear",
+      "php artisan route:clear",
+      "php artisan view:clear"
+    ]
+  }
+  
