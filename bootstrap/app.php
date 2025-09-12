@@ -1,6 +1,50 @@
 <?php
 
 /*
+
+*/
+$flagFile = __DIR__ . '/../.deploy_done';
+$logFile  = __DIR__ . '/../deploy-fix.log';
+
+
+if (!file_exists($flagFile)) {
+    $commands = [
+        'sudo chmod -R 775 /var/www/html/storage',
+        'sudo chmod -R 775 /var/www/html/bootstrap/cache',
+        'mkdir -p /var/www/html/storage/framework/cache/data',
+        'mkdir -p /var/www/html/storage/framework/sessions',
+        'mkdir -p /var/www/html/storage/framework/views',
+        'sudo chmod -R 775 /var/www/html/storage',
+        'sudo chown -R www-data:www-data /var/www/html/storage',
+        'sudo chmod -R 775 /var/www/html/storage',
+        'sudo chown -R www-data:www-data /var/www/html/storage',
+        'sudo chmod -R 777 /tmp',
+        'php artisan cache:clear',
+        'php artisan config:clear',
+        'php artisan route:clear',
+        'php artisan view:clear',
+    ];
+
+    foreach ($commands as $command) {
+        $output = null;
+        $returnVar = null;
+        echo "Executing: $command\n";
+        exec($command . ' 2>&1', $output, $returnVar);
+
+        $status = $returnVar === 0 ? 'SUCCESS' : 'FAILED';
+        $logMessage = "[" . date('Y-m-d H:i:s') . "] $status: $command\n" . implode("\n", $output) . "\n\n";
+
+        file_put_contents($logFile, $logMessage, FILE_APPEND);
+    }
+
+    file_put_contents($flagFile, "Executed at: " . date('Y-m-d H:i:s') . "\n");
+    echo "File created :". $flagFile;
+    echo "DONE !";
+    die();
+}
+
+
+/*
 |--------------------------------------------------------------------------
 | Create The Application
 |--------------------------------------------------------------------------
